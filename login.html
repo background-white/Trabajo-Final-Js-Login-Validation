@@ -9,52 +9,47 @@
 	<link rel="stylesheet" href="./login.css">
 </head>
 <body>
+	<!-- <img src="./Img login/fondo picachu.jpg" alt=""> -->
 	<main>
+
         <div class="cabecera-titulo">
             <h1>Login</h1>
         </div>
-		<form action="" class="formulario" id="formulario">
+		<form action="" class="login" id="login">
 			<!-- Grupo: Usuario -->
-			<div class="formulario__grupo" id="grupo__usuario">
-				<label for="usuario" class="formulario__label">Usuario</label>
-				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="john123">
-					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+			<div class="login__grupo" id="grupo__usuario">
+				<label for="usuario" class="login__label">Usuario</label>
+				<div class="login__grupo-input">
+					<input type="text" class="login__input" name="usuario" id="usuario" placeholder="john123">
+					<i class="login__validacion-estado fas fa-times-circle"></i>
 				</div>
-				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+				<p class="login__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
 			</div>
 
 			
 
 			<!-- Grupo: Contraseña -->
-			<div class="formulario__grupo" id="grupo__password">
-				<label for="password" class="formulario__label">Contraseña</label>
-				<div class="formulario__grupo-input">
-					<input type="password" class="formulario__input" name="password" id="password">
-					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+			<div class="login__grupo" id="grupo__password">
+				<label for="password" class="login__label">Contraseña</label>
+				<div class="login__grupo-input">
+					<input type="password" class="login__input" name="password" id="password">
+					<i class="login__validacion-estado fas fa-times-circle"></i>
 				</div>
-				<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+				<p class="login__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
 			</div>
 
-			<!-- Grupo: Terminos y Condiciones -->
-			<div class="formulario__grupo" id="grupo__terminos">
-				<label class="formulario__label">
-					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
-					Acepto los Terminos y Condiciones
-				</label>
+
+			<div class="login__mensaje" id="login__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor ingrese los datos correctamente. </p>
 			</div>
 
-			<div class="formulario__mensaje" id="formulario__mensaje">
-				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
-			</div>
-
-			<div class="formulario__grupo formulario__grupo-btn-enviar">
-				<button type="submit" class="formulario__btn">Ingresar</button>
+			<div class="login__grupo login__grupo-btn-enviar">
+				<button type="submit" class="login__btn">Ingresar</button>
 				<br>
-				<button class="formulario__btn">
-					<a href="#">Registrate</a>
+				<button class="login__btn">
+					<a href="#" class="btn_registro">Registrate</a>
 				</button>
-				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+				<p class="login__mensaje-exito" id="login__mensaje-exito">Enviado exitosamente!</p>
 			</div>
 		</form>
 	</main>
